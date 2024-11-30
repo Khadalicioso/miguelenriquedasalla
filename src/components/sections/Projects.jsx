@@ -72,7 +72,7 @@ const CarouselContainer = styled.div`
   }
 
   .slick-slide {
-    opacity: 0;
+    opacity: 0.5;
     transition: all 0.5s ease;
     transform: scale(0.85);
     filter: blur(2px);
@@ -97,15 +97,6 @@ const CarouselContainer = styled.div`
       transform: scale(1);
       filter: blur(0);
       pointer-events: auto;
-      
-      &.slick-moving {
-        pointer-events: none;
-      }
-    }
-
-    & > div {
-      display: flex;
-      justify-content: center;
     }
   }
 
@@ -126,91 +117,36 @@ const CarouselContainer = styled.div`
 `;
 
 const ArrowContainer = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
   margin-top: 32px;
-
-  @media (max-width: 640px) {
-    gap: 24px;
-    margin-top: 24px;
-  }
 `;
 
 const Arrow = styled.div`
-  width: 55px;
-  height: 55px;
-  background: linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 0.2) 0%,
-    hsla(294, 100%, 50%, 0.2) 100%
-  );
-  border: 2px solid transparent;
+  width: 40px;
+  height: 40px;
+  background-color: ${({ theme }) => theme.card};
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-  
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      225deg,
-      hsla(271, 100%, 50%, 1) 0%,
-      hsla(294, 100%, 50%, 1) 100%
-    );
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    z-index: 0;
-  }
-
+  transition: all 0.3s ease;
+  color: ${({ theme }) => theme.text_primary};
   &:hover {
-    transform: translateY(-3px);
-    border-color: ${({ theme }) => theme.primary};
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
-    
-    &:before {
-      opacity: 1;
-    }
-
-    svg {
-      color: white;
-      transform: scale(1.1);
-    }
-  }
-
-  &:active {
-    transform: scale(0.95) translateY(-2px);
+    background-color: ${({ theme }) => theme.primary};
+    color: white;
+    transform: scale(1.1);
   }
 
   @media (max-width: 768px) {
-    width: 50px;
-    height: 50px;
-  }
-
-  @media (max-width: 640px) {
-    width: 45px;
-    height: 45px;
-  }
-
-  svg {
-    font-size: 28px;
-    color: ${({ theme }) => theme.text_primary};
-    position: relative;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
-
-    @media (max-width: 640px) {
-      font-size: 24px;
-    }
+    width: 35px;
+    height: 35px;
   }
 `;
 
@@ -223,83 +159,62 @@ const Projects = ({ openModal, setOpenModal }) => {
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
-    swipe: true,
-    swipeToSlide: true,
-    touchThreshold: 10,
-    touchMove: true,
-    draggable: true,
-    accessibility: false,
     centerMode: true,
-    centerPadding: '0',
-    initialSlide: 0,
+    centerPadding: "0px",
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    useCSS: true,
-    useTransform: true,
-    waitForAnimate: true,
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '0',
-          swipe: true,
-          swipeToSlide: true,
-          touchMove: true,
-          draggable: true,
-          touchThreshold: 10
-        }
-      },
       {
         breakpoint: 1000,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '0',
-          speed: 800,
-          swipe: true,
-          swipeToSlide: true,
-          touchMove: true,
-          draggable: true,
-          touchThreshold: 10
-        }
-      }
-    ]
+          centerMode: false,
+        },
+      },
+    ],
   };
 
-  const displayProjects = projects;
+  const handleProjectClick = (url) => {
+    if (url) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   return (
-    <Container id="Projects">
+    <Container id="projects">
       <Wrapper>
-        <Title>Projects.</Title>
+        <Title>Projects</Title>
         <Desc>
-          My portfolio highlights my skills and experience through concrete
-          examples of my work. Each project, linked to its code repository and
-          live demo, showcases my ability to tackle complex challenges, leverage
-          diverse technologies, and manage projects efficiently.
+          My portfolio highlights my skills and experience through concrete examples of my work. Each project, linked to its code repository and live demo, showcases my ability to tackle complex challenges, leverage diverse technologies, and manage projects efficiently.
         </Desc>
         <CarouselContainer>
           <Slider ref={setSliderRef} {...settings}>
-            {displayProjects.map((project, index) => (
+            {projects.map((project) => (
               <ProjectCard
-                key={index}
+                key={project.id}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
+                onClick={() => handleProjectClick(project.demo)}
               />
             ))}
           </Slider>
           <ArrowContainer>
-            <Arrow onClick={sliderRef?.slickPrev}>
+            <Arrow onClick={() => sliderRef?.slickPrev()}>
               <ChevronLeft />
             </Arrow>
-            <Arrow onClick={sliderRef?.slickNext}>
+            <Arrow onClick={() => sliderRef?.slickNext()}>
               <ChevronRight />
             </Arrow>
           </ArrowContainer>
