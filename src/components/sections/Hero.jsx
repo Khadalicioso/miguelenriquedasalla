@@ -557,7 +557,7 @@ const Hero = () => {
               </motion.div>
 
               <SocialMediaIcons>
-                <SocialMediaIcon href={Bio.facebook} target="display">
+                <SocialMediaIcon href={Bio.github} target="display">
                   <GithubIcon style={{ fontSize: 48 }} />
                 </SocialMediaIcon>
                 <SocialMediaIcon href={Bio.facebook} target="display">
