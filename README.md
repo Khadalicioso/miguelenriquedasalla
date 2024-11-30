@@ -19,10 +19,10 @@ Hello! I am Miguel Enrique, I'm a skilled frontend developer with a passion for 
 
 To run this portfolio locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Khadalicioso/miguelenrique.github.git`
-2. Navigate to the project directory and Install the dependencies: `cd miguelenrique.github`
+1. Clone the repository: `git clone https://github.com/Khadalicioso/miguelenriquedasalla.git`
+2. Navigate to the project directory: `cd miguelenriquedasalla`
 3. Install the dependencies: `npm install`
-4. Start the development server: `npm start`
+4. Start the development server: `npm run start`
 5. Open your browser and visit: `http://localhost:3000`
 
 ## License
