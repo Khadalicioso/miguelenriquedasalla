@@ -1,7 +1,7 @@
 {
   "name": "miguelenriquedasalla",
   "version": "0.1.1",
-  "homepage": "https://khadalicioso.github.io/miguelenriquedasalla",
+  "homepage": "/miguelenriquedasalla",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
