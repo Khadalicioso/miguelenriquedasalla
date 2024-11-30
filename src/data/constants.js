@@ -256,6 +256,6 @@ export const projects = [
     image: CarShowcase,
     tags: ["Next JS", "TypeScript", "Tailwind CSS"],
     source: "https://github.com/Khadalicioso/carhub",
-    demo: "",
+    demo: "https://khadalicioso.github.io/carhub/",
   },
 ];
