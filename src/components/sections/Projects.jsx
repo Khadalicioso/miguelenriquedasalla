@@ -156,22 +156,24 @@ const Projects = ({ openModal, setOpenModal }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 200,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: "60px",
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: true,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1000,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          centerMode: false,
+          centerMode: true,
+          centerPadding: "0",
+          speed: 200,
+          cssEase: "linear",
+          infinite: true
         },
       },
       {
@@ -179,7 +181,11 @@ const Projects = ({ openModal, setOpenModal }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false,
+          centerMode: true,
+          centerPadding: "20px",
+          speed: 200,
+          cssEase: "linear",
+          infinite: true
         },
       },
     ],
@@ -192,7 +198,7 @@ const Projects = ({ openModal, setOpenModal }) => {
   };
 
   return (
-    <Container id="projects">
+    <Container id="Projects">
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
