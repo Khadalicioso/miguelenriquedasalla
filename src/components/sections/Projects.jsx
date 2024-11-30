@@ -68,6 +68,7 @@ const CarouselContainer = styled.div`
   .slick-track {
     display: flex !important;
     justify-content: center;
+    touch-action: pan-y pinch-zoom;
   }
 
   .slick-slide {
@@ -81,12 +82,13 @@ const CarouselContainer = styled.div`
       opacity: 0.5;
       transform: scale(0.85);
       filter: blur(2px);
-      pointer-events: auto;
+      pointer-events: none;
 
       @media (max-width: 1000px) {
         opacity: 1;
         transform: scale(1);
         filter: blur(0);
+        pointer-events: auto;
       }
     }
     
@@ -95,6 +97,10 @@ const CarouselContainer = styled.div`
       transform: scale(1);
       filter: blur(0);
       pointer-events: auto;
+      
+      &.slick-moving {
+        pointer-events: none;
+      }
     }
 
     & > div {
@@ -218,10 +224,11 @@ const Projects = ({ openModal, setOpenModal }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    swipe: false,
-    swipeToSlide: false,
-    touchMove: false,
-    draggable: false,
+    swipe: true,
+    swipeToSlide: true,
+    touchThreshold: 10,
+    touchMove: true,
+    draggable: true,
     accessibility: false,
     centerMode: true,
     centerPadding: '0',
@@ -229,6 +236,9 @@ const Projects = ({ openModal, setOpenModal }) => {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    useCSS: true,
+    useTransform: true,
+    waitForAnimate: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -237,10 +247,11 @@ const Projects = ({ openModal, setOpenModal }) => {
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: '0',
-          swipe: false,
-          swipeToSlide: false,
-          touchMove: false,
-          draggable: false
+          swipe: true,
+          swipeToSlide: true,
+          touchMove: true,
+          draggable: true,
+          touchThreshold: 10
         }
       },
       {
@@ -251,10 +262,11 @@ const Projects = ({ openModal, setOpenModal }) => {
           centerMode: true,
           centerPadding: '0',
           speed: 800,
-          swipe: false,
-          swipeToSlide: false,
-          touchMove: false,
-          draggable: false
+          swipe: true,
+          swipeToSlide: true,
+          touchMove: true,
+          draggable: true,
+          touchThreshold: 10
         }
       }
     ]
