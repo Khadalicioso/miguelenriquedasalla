@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/miguelenriquedasalla/static/css/main.698775ba.css",
-    "main.js": "/miguelenriquedasalla/static/js/main.a6da731d.js",
+    "main.css": "/miguelenriquedasalla/static/css/main.3a2e910b.css",
+    "main.js": "/miguelenriquedasalla/static/js/main.59d1658a.js",
     "static/media/SchoolLogo.png": "/miguelenriquedasalla/static/media/SchoolLogo.8aefa9a3322ba3541b55.png",
     "static/media/KopibaraCoffeeShop.jpg": "/miguelenriquedasalla/static/media/KopibaraCoffeeShop.e777dd3cbc9863a55028.jpg",
     "static/media/BlogWebApp.jpg": "/miguelenriquedasalla/static/media/BlogWebApp.da466cbf6e1ba3abeaaf.jpg",
@@ -22,7 +22,7 @@
     "index.html": "/miguelenriquedasalla/index.html"
   },
   "entrypoints": [
-    "static/css/main.698775ba.css",
-    "static/js/main.a6da731d.js"
+    "static/css/main.3a2e910b.css",
+    "static/js/main.59d1658a.js"
   ]
 }
