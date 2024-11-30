@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 const EarthModel = () => {
   const [scale, setScale] = useState(2);
-  const modelPath = '/planet/scene.gltf';
+  const modelPath = process.env.PUBLIC_URL + '/planet/scene.gltf';
   const { scene } = useGLTF(modelPath);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const EarthModel = () => {
 
 const EarthCanvas = () => {
   useEffect(() => {
-    useGLTF.preload('/planet/scene.gltf');
+    useGLTF.preload(process.env.PUBLIC_URL + '/planet/scene.gltf');
   }, []);
 
   return (
