@@ -236,7 +236,7 @@ export const projects = [
     image: NetflixClone,
     tags: ["React JS", "Firebase"],
     source: "https://github.com/Khadalicioso/netflix__clone",
-    demo: "",
+    demo: "https://khadalicioso.github.io/netflix__clone/",
   },
   {
     id: 9,
