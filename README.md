@@ -1,30 +1,99 @@
-# Miguel Enrique
+# Miguel Enrique Dasalla 
 
 ## _My Personal Portfolio_
 
-Hello! I am Miguel Enrique, I'm a skilled frontend developer with a passion for crafting intuitive and visually appealing user interfaces. I'm also eager to expand my skill set into backend development, building the robust foundations that power exceptional web applications.
+<div align="center">
 
-### Demo: [Click Me](https://khadalicioso.github.io/miguelenriquedasalla)
+[![Portfolio Demo](https://img.shields.io/badge/Demo-Live%20Preview-blue)](https://khadalicioso.github.io/miguelenriquedasalla)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-18.x-blue)](https://reactjs.org/)
 
-## Technologies Used
+</div>
 
-- HTML5 & CSS3: Markup and styling languages for building web pages.
-- JavaScript: A programming language for adding interactivity to web applications.
-- React JS: A JavaScript library for building user interfaces.
-- Style-Components: A CSS framework for creating responsive and mobile-first designs.
-- Git: A version control system for tracking changes and collaborating on projects.
-- GitHub Pages: A platform for hosting and deploying web applications.
+## Overview
 
-## Installation
+Welcome to my personal portfolio! I'm Miguel Enrique, a passionate frontend developer dedicated to creating intuitive and visually stunning user interfaces. With a strong foundation in frontend technologies and an eagerness to expand into backend development, I strive to build comprehensive web applications that deliver exceptional user experiences.
 
-To run this portfolio locally, follow these steps:
+**Live Demo:** [View Portfolio](https://khadalicioso.github.io/miguelenriquedasalla)
 
-1. Clone the repository: `git clone https://github.com/Khadalicioso/miguelenriquedasalla.git`
-2. Navigate to the project directory: `cd miguelenriquedasalla`
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm run start`
-5. Open your browser and visit: `http://localhost:3000`
+## Core Features
+
+- Responsive design that works on all devices
+- Modern and clean user interface
+- Fast and optimized performance
+- SEO-friendly structure
+- Interactive project showcases
+
+## Technologies
+
+### Frontend
+- **React.js** - Frontend framework
+- **Styled-Components** - CSS-in-JS styling
+- **HTML5 & CSS3** - Markup and styling
+- **JavaScript (ES6+)** - Programming language
+
+### Development Tools
+- **Git** - Version control
+- **npm** - Package management
+- **GitHub Pages** - Hosting platform
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/Khadalicioso/miguelenriquedasalla.git
+   ```
+
+2. Navigate to project directory
+   ```bash
+   cd miguelenriquedasalla
+   ```
+
+3. Install dependencies
+   ```bash
+   npm install
+   ```
+
+4. Start development server
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and visit `http://localhost:3000`
+
+## Project Structure
+
+```
+miguelenriquedasalla/
+├── public/
+│   ├── index.html
+│   └── assets/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── App.js
+└── package.json
+```
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Khadalicioso/miguelenriquedasalla/issues).
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Miguel Enrique - [GitHub](https://github.com/Khadalicioso)
+
+Project Link: [https://github.com/Khadalicioso/miguelenriquedasalla](https://github.com/Khadalicioso/miguelenriquedasalla)
