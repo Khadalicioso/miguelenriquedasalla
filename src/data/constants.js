@@ -6,7 +6,6 @@ import RestaurantWebApp from "../images/RestaurantWebApp.jpg";
 import NetflixClone from "../images/NetflixClone.jpg";
 import KopibaraCoffeeShop from "../images/KopibaraCoffeeShop.jpg";
 import LandingPages from "../images/LandingPages.jpg";
-import HealthCare from "../images/HealthCare.jpg";
 import CarShowcase from "../images/CarShowcase.jpg";
 import Opulence from "../images/Opulence.jpg";
 import SchoolLogo from "../images/SchoolLogo.png";
@@ -145,7 +144,8 @@ export const projects = [
   {
     id: 0,
     title: "Javascript Mastery",
-    description: ["Javascript Codes Collection Practices"],
+    description:
+      "A comprehensive collection of JavaScript projects designed to help me master web development through hands-on practice. This repository contains various projects ranging from simple utilities to complex games and applications.",
     image: JavascriptMastery,
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/Khadalicioso/Javascript__Mastery",
@@ -155,7 +155,7 @@ export const projects = [
     id: 1,
     title: "Landing Pages",
     description:
-      "I specialize in crafting stunning, high-performance landing pages that captivate the audiences and drive conversions. As a skilled web developer, I leverage the latest technologies like HTML, CSS, and JavaScript to create visually appealing and user-friendly experiences. I utilize powerful frameworks such as Bootstrap and Tailwind CSS to streamline development and ensure consistent branding across all devices. For dynamic and interactive elements, I employ React to build robust and scalable front-end applications.",
+      "A collection of modern, responsive landing pages and web applications built with various technologies.",
     image: LandingPages,
     tags: [
       "HTML",
@@ -232,7 +232,7 @@ export const projects = [
     id: 8,
     title: "Netflix Clone",
     description:
-      "I built a Netflix Clone using React JS and Firebase, offering a seamless streaming experience right at your fingertips. Dive into a vast library of movies and TV shows, personalized recommendations, and high-quality video streaming.",
+      "A Netflix clone web application built with modern web technologies. This project replicates the core features and UI of Netflix, providing a similar streaming platform experience.",
     image: NetflixClone,
     tags: ["React JS", "Firebase"],
     source: "https://github.com/Khadalicioso/netflix__clone",
@@ -240,19 +240,9 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Carepulse",
-    description:
-      "A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.",
-    image: HealthCare,
-    tags: ["Next JS", "TypeScript", "Tailwind CSS"],
-    source: "https://github.com/Khadalicioso/carepulse",
-    demo: "",
-  },
-  {
-    id: 10,
     title: "CarHub",
     description:
-      "Developed with Next.js, TypeScript, and leveraging its server-side rendering capabilities, the Car Showcase website presents various car types, showcasing comprehensive information in a well-designed format, with advanced filtering and pagination support, all styled with Tailwind CSS to enhance the user experience.",
+      "A modern car showcase platform built with Next.js 13, allowing users to explore and discover various car models with a beautiful and responsive interface.",
     image: CarShowcase,
     tags: ["Next JS", "TypeScript", "Tailwind CSS"],
     source: "https://github.com/Khadalicioso/carhub",
