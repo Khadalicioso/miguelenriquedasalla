@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/miguelenriquedasalla/static/css/main.3f8aac83.css",
-    "main.js": "/miguelenriquedasalla/static/js/main.fa7c8d58.js",
+    "main.js": "/miguelenriquedasalla/static/js/main.c11af8b6.js",
     "static/media/SchoolLogo.png": "/miguelenriquedasalla/static/media/SchoolLogo.8aefa9a3322ba3541b55.png",
     "static/media/KopibaraCoffeeShop.jpg": "/miguelenriquedasalla/static/media/KopibaraCoffeeShop.e777dd3cbc9863a55028.jpg",
     "static/media/BlogWebApp.jpg": "/miguelenriquedasalla/static/media/BlogWebApp.da466cbf6e1ba3abeaaf.jpg",
-    "static/media/HealthCare.jpg": "/miguelenriquedasalla/static/media/HealthCare.ca406e8c9bc8d5d6278d.jpg",
     "static/media/BookstoreWebApp.jpg": "/miguelenriquedasalla/static/media/BookstoreWebApp.0abbe0994a083a446546.jpg",
     "static/media/JavascriptMastery.jpg": "/miguelenriquedasalla/static/media/JavascriptMastery.c6adf0dbf1f484e81c7f.jpg",
     "static/media/NetflixClone.jpg": "/miguelenriquedasalla/static/media/NetflixClone.53449cecf3d9a4521fa8.jpg",
@@ -23,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.3f8aac83.css",
-    "static/js/main.fa7c8d58.js"
+    "static/js/main.c11af8b6.js"
   ]
 }
