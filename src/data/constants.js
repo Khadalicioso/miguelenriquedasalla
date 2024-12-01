@@ -143,17 +143,18 @@ export const experiences = [
 export const projects = [
   {
     id: 0,
-    title: "Javascript Mastery",
+    title: "JavaScript Mastery Collection",
     description:
       "A comprehensive collection of JavaScript projects designed to help me master web development through hands-on practice. This repository contains various projects ranging from simple utilities to complex games and applications.",
     image: JavascriptMastery,
     tags: ["HTML", "CSS", "JavaScript"],
-    source: "https://github.com/Khadalicioso/Javascript__Mastery",
+    source:
+      "https://github.com/Khadalicioso/javascript_mastery_projects_collection.git",
     demo: "",
   },
   {
     id: 1,
-    title: "Landing Pages",
+    title: "Modern Websites Collection",
     description:
       "A collection of modern, responsive landing pages and web applications built with various technologies.",
     image: LandingPages,
@@ -165,7 +166,8 @@ export const projects = [
       "Tailwind CSS",
       "React JS",
     ],
-    source: "https://github.com/Khadalicioso/Websites",
+    source:
+      "https://github.com/Khadalicioso/modern_web_development_projects.git",
     demo: "",
   },
   {
@@ -175,7 +177,7 @@ export const projects = [
       "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Blog WebApp is more than just a digital diary. It's a platform for sharing thoughts, ideas, and stories with the world. Explore a diverse range of topics, from technology and culture to personal experiences and creative endeavors.",
     image: BlogWebApp,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/blog__webapp",
+    source: "https://github.com/Khadalicioso/the_curious_mind.git",
     demo: "",
   },
   {
@@ -185,7 +187,7 @@ export const projects = [
       "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Book Store WebApp is your digital portal to a world of words. Explore a vast collection of books, from classic literature to contemporary bestsellers.",
     image: BookstoreWebApp,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/bookstore__webapp",
+    source: "https://github.com/Khadalicioso/read_right.git",
     demo: "",
   },
   {
@@ -195,7 +197,7 @@ export const projects = [
       "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Hotel Booking WebApp is your passport to unforgettable travel experiences. Effortlessly search, book, and manage your hotel stays, all from the comfort of your device.",
     image: HotelBookingWebApp,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/hotel__booking__webapp",
+    source: "https://github.com/Khadalicioso/kpl_hotel_and_resort.git",
     demo: "",
   },
   {
@@ -205,7 +207,7 @@ export const projects = [
       "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Restaurant WebApp is a powerful tool that streamlines restaurant operations and enhances the customer dining experience, offering features like online ordering, table reservations, loyalty programs, contactless payments, and real-time updates.",
     image: RestaurantWebApp,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/restaurant__webapp",
+    source: "https://github.com/Khadalicioso/yumtopia.git",
     demo: "",
   },
   {
@@ -215,7 +217,7 @@ export const projects = [
       "Opulence is a simple sophisticated real estate web application meticulously crafted using HTML, CSS, JavaScript, PHP, and MySQL. This platform is designed to cater to discerning individuals seeking extraordinary properties.",
     image: Opulence,
     tags: ["HTML", "CSS", "Javascript", "PDO", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/opulence",
+    source: "https://github.com/Khadalicioso/opulence.git",
     demo: "",
   },
   {
@@ -235,7 +237,7 @@ export const projects = [
       "A Netflix clone web application built with modern web technologies. This project replicates the core features and UI of Netflix, providing a similar streaming platform experience.",
     image: NetflixClone,
     tags: ["React JS", "Firebase"],
-    source: "https://github.com/Khadalicioso/netflix__clone",
+    source: "https://github.com/Khadalicioso/netflix_clone.git",
     demo: "https://khadalicioso.github.io/netflix__clone/",
   },
   {
@@ -245,7 +247,7 @@ export const projects = [
       "A modern car showcase platform built with Next.js 13, allowing users to explore and discover various car models with a beautiful and responsive interface.",
     image: CarShowcase,
     tags: ["Next JS", "TypeScript", "Tailwind CSS"],
-    source: "https://github.com/Khadalicioso/carhub",
+    source: "https://github.com/Khadalicioso/carhub.git",
     demo: "https://khadalicioso.github.io/carhub/",
   },
 ];
