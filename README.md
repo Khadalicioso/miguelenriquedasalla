@@ -1,4 +1,4 @@
-# Miguel Enrique Dasalla 
+# Miguel Enrique Dasalla
 
 ## _My Personal Portfolio_
 
@@ -27,12 +27,14 @@ Welcome to my personal portfolio! I'm Miguel Enrique Dasalla, a passionate front
 ## Technologies
 
 ### Frontend
+
 - **React.js** - Frontend framework
 - **Styled-Components** - CSS-in-JS styling
 - **HTML5 & CSS3** - Markup and styling
 - **JavaScript (ES6+)** - Programming language
 
 ### Development Tools
+
 - **Git** - Version control
 - **npm** - Package management
 - **GitHub Pages** - Hosting platform
@@ -42,27 +44,32 @@ Welcome to my personal portfolio! I'm Miguel Enrique Dasalla, a passionate front
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - npm (v6 or higher)
 
 ### Installation
 
 1. Clone the repository
+
    ```bash
    git clone https://github.com/Khadalicioso/miguelenriquedasalla.git
    ```
 
 2. Navigate to project directory
+
    ```bash
    cd miguelenriquedasalla
    ```
 
 3. Install dependencies
+
    ```bash
    npm install
    ```
 
 4. Start development server
+
    ```bash
    npm start
    ```
@@ -91,9 +98,3 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-Miguel Enrique - [GitHub](https://github.com/Khadalicioso)
-
-Project Link: [https://github.com/Khadalicioso/miguelenriquedasalla](https://github.com/Khadalicioso/miguelenriquedasalla)
