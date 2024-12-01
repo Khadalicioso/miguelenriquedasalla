@@ -156,12 +156,8 @@ const TextLoop = styled.div`
     text-align: center;
   }
   @media (max-width: 639px) {
-    font-size: 24px;
-    line-height: 52px;
-  }
-  @media (max-width: 475px) {
-    font-size: 22px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 40px;
   }
   @media (max-width: 349px) {
     font-size: 18px;
@@ -182,21 +178,7 @@ const Span = styled.div`
     padding: 12px 0;
   }
 
-  @media (max-width: 767px) {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
   @media (max-width: 639px) {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 8px 0;
-  }
-
-  @media (max-width: 475px) {
     display: block;
     width: 100%;
     text-align: center;
@@ -220,16 +202,12 @@ const SubTitle = styled.div`
     text-align: center;
   }
   @media (max-width: 639px) {
-    font-size: 18px;
-    line-height: 36px;
-  }
-  @media (max-width: 475px) {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 34px;
   }
   @media (max-width: 349px) {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 32px;
   }
 `;
@@ -327,8 +305,8 @@ const Img = styled.img`
   }
 
   @media (max-width: 639px) {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 250px;
+    max-height: 250px;
   }
 
   @media (max-width: 349px) {
@@ -513,8 +491,8 @@ const RotatingIconsBackground = styled.div`
 `;
 
 const Hero = () => {
-  const helloText = "Hello, I am";
-  const nameText = `${Bio.name},`;
+  const helloText = "Hi, I'm";
+  const nameText = `${Bio.name}`;
 
   const splitText = (text) => {
     return text
