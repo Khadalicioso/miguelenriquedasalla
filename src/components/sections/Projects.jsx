@@ -54,6 +54,29 @@ const Desc = styled.div`
   }
 `;
 
+const StatusLegend = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+`;
+
+const StatusItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: ${({ theme }) => theme.text_primary};
+  font-size: 14px;
+`;
+
+const StatusDot = styled.div`
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: ${({ color }) => color};
+`;
+
 const CarouselContainer = styled.div`
   width: 100%;
   position: relative;
@@ -204,6 +227,20 @@ const Projects = ({ openModal, setOpenModal }) => {
         <Desc>
           My portfolio highlights my skills and experience through concrete examples of my work. Each project, linked to its code repository and live demo, showcases my ability to tackle complex challenges, leverage diverse technologies, and manage projects efficiently.
         </Desc>
+        <StatusLegend>
+          <StatusItem>
+            <StatusDot color="#854CE6" />
+            <span>Completed</span>
+          </StatusItem>
+          <StatusItem>
+            <StatusDot color="#45c512" />
+            <span>In Progress</span>
+          </StatusItem>
+          <StatusItem>
+            <StatusDot color="#fc4444" />
+            <span>Discontinued / On-Hold</span>
+          </StatusItem>
+        </StatusLegend>
         <CarouselContainer>
           <Slider ref={setSliderRef} {...settings}>
             {projects.map((project) => (

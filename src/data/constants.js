@@ -93,7 +93,7 @@ export const skills = [
       {
         name: ".NET",
         image:
-          "https://camo.githubusercontent.com/8ae3d3c84bcef6cce183bf094f57e2998fa844dae3d28cd09c333b5ef84442c9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f646f742d6e65742f646f742d6e65742d6f726967696e616c2e737667",
+          "https://camo.githubusercontent.com/8ae3d3c84bcef6cce183bf094f57e2998fa844dae3d28cd09c333b5ef84442c9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f646f742e6e65742f646f742e6e65742d6f726967696e616c2e737667",
       },
       {
         name: ".NET Core",
@@ -147,8 +147,105 @@ export const experiences = [
 
 export const projects = [
   {
-    id: 0,
-    title: "JavaScript Mastery Collection",
+    id: 9,
+    title: "Netflix Clone",
+    date: "November 2024 - December 2024",
+    description:
+      "A Netflix clone web application built with modern web technologies. This project replicates the core features and UI of Netflix, providing a similar streaming platform experience.",
+    image: NetflixClone,
+    tags: ["React JS", "Firebase"],
+    source: "https://github.com/Khadalicioso/netflix_clone.git",
+    demo: "https://khadalicioso.github.io/netflix_clone/",
+    status: "completed",
+  },
+  {
+    id: 8,
+    title: "CarHub",
+    date: "November 2024 - December 2024",
+    description:
+      "A modern car showcase platform built with Next.js 13, allowing users to explore and discover various car models with a beautiful and responsive interface.",
+    image: CarShowcase,
+    tags: ["Next JS", "TypeScript", "Tailwind CSS"],
+    source: "https://github.com/Khadalicioso/carhub.git",
+    demo: "https://khadalicioso.github.io/carhub/",
+    status: "completed",
+  },
+  {
+    id: 7,
+    title: "Opulence",
+    date: "November 2024",
+    description:
+      "Opulence is a simple sophisticated real estate web application meticulously crafted using HTML, CSS, JavaScript, PHP, and MySQL. This platform is designed to cater to discerning individuals seeking extraordinary properties.",
+    image: Opulence,
+    tags: ["HTML", "CSS", "Javascript", "PDO", "PHP", "MySQL"],
+    source: "https://github.com/Khadalicioso/opulence.git",
+    demo: "",
+    status: "completed",
+  },
+  {
+    id: 6,
+    title: "Yumtopia😋",
+    date: "October 2024",
+    description:
+      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Restaurant WebApp is a powerful tool that streamlines restaurant operations and enhances the customer dining experience, offering features like online ordering, table reservations, loyalty programs, contactless payments, and real-time updates.",
+    image: RestaurantWebApp,
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    source: "https://github.com/Khadalicioso/yumtopia.git",
+    demo: "",
+    status: "completed",
+  },
+  {
+    id: 5,
+    title: "Kopibara",
+    date: "September 2024 - Present",
+    description:
+      "A Coffee Ordering Web Application built with ASP.NET MVC, leveraging Microsoft SQL Server as the database, an API for Google Authentication, Entity Framework for data access, and Paymongo for secure payment processing.",
+    image: KopibaraCoffeeShop,
+    tags: ["ASP.NET", "MVC", "SQL Server"],
+    source: "",
+    demo: "",
+    status: "inprogress",
+  },
+  {
+    id: 4,
+    title: "K$PAL Hotel and Resort",
+    date: "September 2024",
+    description:
+      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Hotel Booking WebApp is your passport to unforgettable travel experiences. Effortlessly search, book, and manage your hotel stays, all from the comfort of your device.",
+    image: HotelBookingWebApp,
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    source: "https://github.com/Khadalicioso/kpl_hotel_and_resort.git",
+    demo: "",
+    status: "completed",
+  },
+  {
+    id: 3,
+    title: "Read Right",
+    date: "August 2024",
+    description:
+      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Book Store WebApp is your digital portal to a world of words. Explore a vast collection of books, from classic literature to contemporary bestsellers.",
+    image: BookstoreWebApp,
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    source: "https://github.com/Khadalicioso/read_right.git",
+    demo: "",
+    status: "completed",
+  },
+  {
+    id: 2,
+    title: "The Curious Mind",
+    date: "July 2024",
+    description:
+      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Blog WebApp is more than just a digital diary. It's a platform for sharing thoughts, ideas, and stories with the world. Explore a diverse range of topics, from technology and culture to personal experiences and creative endeavors.",
+    image: BlogWebApp,
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    source: "https://github.com/Khadalicioso/the_curious_mind.git",
+    demo: "",
+    status: "completed",
+  },
+  {
+    id: 1,
+    title: "JavaScript Mastery",
+    date: "June 2024 - Present",
     description:
       "A comprehensive collection of JavaScript projects designed to help me master web development through hands-on practice. This repository contains various projects ranging from simple utilities to complex games and applications.",
     image: JavascriptMastery,
@@ -156,10 +253,12 @@ export const projects = [
     source:
       "https://github.com/Khadalicioso/javascript_mastery_projects_collection.git",
     demo: "",
+    status: "inprogress",
   },
   {
-    id: 1,
-    title: "Modern Websites Collection",
+    id: 0,
+    title: "Landing Page Collection",
+    date: "June 2024 - Present",
     description:
       "A collection of modern, responsive landing pages and web applications built with various technologies.",
     image: LandingPages,
@@ -174,85 +273,6 @@ export const projects = [
     source:
       "https://github.com/Khadalicioso/modern_web_development_projects.git",
     demo: "",
-  },
-  {
-    id: 2,
-    title: "The Curious Mind",
-    description:
-      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Blog WebApp is more than just a digital diary. It's a platform for sharing thoughts, ideas, and stories with the world. Explore a diverse range of topics, from technology and culture to personal experiences and creative endeavors.",
-    image: BlogWebApp,
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/the_curious_mind.git",
-    demo: "",
-  },
-  {
-    id: 3,
-    title: "Read Right",
-    description:
-      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Book Store WebApp is your digital portal to a world of words. Explore a vast collection of books, from classic literature to contemporary bestsellers.",
-    image: BookstoreWebApp,
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/read_right.git",
-    demo: "",
-  },
-  {
-    id: 4,
-    title: "K$PAL Hotel and Resort",
-    description:
-      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Hotel Booking WebApp is your passport to unforgettable travel experiences. Effortlessly search, book, and manage your hotel stays, all from the comfort of your device.",
-    image: HotelBookingWebApp,
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/kpl_hotel_and_resort.git",
-    demo: "",
-  },
-  {
-    id: 5,
-    title: "Yumtopia😋",
-    description:
-      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Restaurant WebApp is a powerful tool that streamlines restaurant operations and enhances the customer dining experience, offering features like online ordering, table reservations, loyalty programs, contactless payments, and real-time updates.",
-    image: RestaurantWebApp,
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/yumtopia.git",
-    demo: "",
-  },
-  {
-    id: 6,
-    title: "Opulence",
-    description:
-      "Opulence is a simple sophisticated real estate web application meticulously crafted using HTML, CSS, JavaScript, PHP, and MySQL. This platform is designed to cater to discerning individuals seeking extraordinary properties.",
-    image: Opulence,
-    tags: ["HTML", "CSS", "Javascript", "PDO", "PHP", "MySQL"],
-    source: "https://github.com/Khadalicioso/opulence.git",
-    demo: "",
-  },
-  {
-    id: 7,
-    title: "Kopibara",
-    description:
-      "A Coffee Ordering Web Application built with ASP.NET MVC, leveraging Microsoft SQL Server as the database, an API for Google Authentication, Entity Framework for data access, and Paymongo for secure payment processing.",
-    image: KopibaraCoffeeShop,
-    tags: ["ASP.NET", "MVC", "SQL Server"],
-    source: "",
-    demo: "",
-  },
-  {
-    id: 8,
-    title: "Netflix Clone",
-    description:
-      "A Netflix clone web application built with modern web technologies. This project replicates the core features and UI of Netflix, providing a similar streaming platform experience.",
-    image: NetflixClone,
-    tags: ["React JS", "Firebase"],
-    source: "https://github.com/Khadalicioso/netflix_clone.git",
-    demo: "https://khadalicioso.github.io/netflix_clone/",
-  },
-  {
-    id: 9,
-    title: "CarHub",
-    description:
-      "A modern car showcase platform built with Next.js 13, allowing users to explore and discover various car models with a beautiful and responsive interface.",
-    image: CarShowcase,
-    tags: ["Next JS", "TypeScript", "Tailwind CSS"],
-    source: "https://github.com/Khadalicioso/carhub.git",
-    demo: "https://khadalicioso.github.io/carhub/",
+    status: "inprogress",
   },
 ];
