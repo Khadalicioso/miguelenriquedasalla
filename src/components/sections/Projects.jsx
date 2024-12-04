@@ -223,7 +223,7 @@ const Projects = ({ openModal, setOpenModal }) => {
   return (
     <Container id="Projects">
       <Wrapper>
-        <Title>Projects</Title>
+        <Title>Projects.</Title>
         <Desc>
           My portfolio highlights my skills and experience through concrete examples of my work. Each project, linked to its code repository and live demo, showcases my ability to tackle complex challenges, leverage diverse technologies, and manage projects efficiently.
         </Desc>
