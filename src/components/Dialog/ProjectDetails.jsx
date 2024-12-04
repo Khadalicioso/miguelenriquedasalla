@@ -1,4 +1,4 @@
-import { CloseRounded } from "@mui/icons-material";
+import { CloseRounded, GitHub, Launch } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
@@ -132,9 +132,25 @@ const Button = styled.a`
             background-color: ${({ theme }) => theme.bg + 99};
         }
     `}
+  ${({ disabled, theme }) =>
+    disabled &&
+    `
+        background-color: ${theme.bgLight};
+        color: ${theme.text_secondary};
+        pointer-events: none;
+        opacity: 0.8;
+        &:hover {
+            background-color: ${theme.bgLight};
+            cursor: not-allowed;
+        }
+    `}
   cursor: pointer;
   text-decoration: none;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   &:hover {
     background-color: ${({ theme }) => theme.primary + 99};
   }
@@ -171,13 +187,19 @@ const index = ({ openModal, setOpenModal }) => {
           </Tags>
           <Desc>{project?.description}</Desc>
           <ButtonGroup>
-            {project?.source && (
-              <Button dull href={project.source} target="new">
-                Source
-              </Button>
-            )}
+            <Button 
+              dull 
+              href={project?.source || "#"} 
+              target="new"
+              disabled={!project?.source}
+              onClick={(e) => !project?.source && e.preventDefault()}
+            >
+              <GitHub />
+              {project?.source ? "Source" : "Private"}
+            </Button>
             {project?.demo && (
               <Button href={project.demo} target="new">
+                <Launch />
                 Visit
               </Button>
             )}
