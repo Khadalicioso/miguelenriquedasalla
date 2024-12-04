@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/miguelenriquedasalla/static/css/main.3f8aac83.css",
-    "main.js": "/miguelenriquedasalla/static/js/main.59cc76fc.js",
+    "main.js": "/miguelenriquedasalla/static/js/main.9007a10f.js",
     "static/media/SchoolLogo.png": "/miguelenriquedasalla/static/media/SchoolLogo.8aefa9a3322ba3541b55.png",
     "static/media/KopibaraCoffeeShop.jpg": "/miguelenriquedasalla/static/media/KopibaraCoffeeShop.e777dd3cbc9863a55028.jpg",
     "static/media/BlogWebApp.jpg": "/miguelenriquedasalla/static/media/BlogWebApp.da466cbf6e1ba3abeaaf.jpg",
@@ -13,6 +13,7 @@
     "static/media/HotelBookingWebApp.jpg": "/miguelenriquedasalla/static/media/HotelBookingWebApp.d17e9a570222d01be059.jpg",
     "static/media/Opulence.jpg": "/miguelenriquedasalla/static/media/Opulence.0d1ff33ea3fb71b5081a.jpg",
     "static/media/LandingPages.jpg": "/miguelenriquedasalla/static/media/LandingPages.8184b0723ec5bc9bb7a6.jpg",
+    "static/media/DebugFitness.jpg": "/miguelenriquedasalla/static/media/DebugFitness.f7983c21b0cbaacc49ed.jpg",
     "static/media/profile.jpg": "/miguelenriquedasalla/static/media/profile.6e7ffc4515edec733474.jpg",
     "static/media/slick.svg": "/miguelenriquedasalla/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/miguelenriquedasalla/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -22,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.3f8aac83.css",
-    "static/js/main.59cc76fc.js"
+    "static/js/main.9007a10f.js"
   ]
 }
