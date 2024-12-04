@@ -9,6 +9,7 @@ import LandingPages from "../images/LandingPages.jpg";
 import CarShowcase from "../images/CarShowcase.jpg";
 import Opulence from "../images/Opulence.jpg";
 import SchoolLogo from "../images/SchoolLogo.png";
+import DebugFitness from "../images/DebugFitness.jpg";
 
 export const Bio = {
   name: "Miguel Enrique Dasalla",
@@ -146,6 +147,17 @@ export const experiences = [
 ];
 
 export const projects = [
+  {
+    id: 10,
+    title: "Debug Fitness",
+    date: "December 2024",
+    description: "",
+    image: DebugFitness,
+    tags: ["React JS", "API"],
+    source: "",
+    demo: "",
+    status: "inprogress",
+  },
   {
     id: 9,
     title: "Netflix Clone",
