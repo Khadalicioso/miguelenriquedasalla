@@ -153,10 +153,10 @@ export const projects = [
     date: "December 2024",
     description: "",
     image: DebugFitness,
-    tags: ["React JS", "API"],
-    source: "",
+    tags: ["React JS", "API", "Material UI"],
+    source: "https://github.com/Khadalicioso/debug_fitness.git",
     demo: "",
-    status: "inprogress",
+    status: "completed",
   },
   {
     id: 9,
