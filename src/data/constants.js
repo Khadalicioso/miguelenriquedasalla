@@ -151,7 +151,8 @@ export const projects = [
     id: 10,
     title: "Debug Fitness",
     date: "December 2024",
-    description: "",
+    description:
+      "A modern fitness application built with React and Material-UI that helps users discover, learn, and track various exercises. The app provides detailed exercise information, video demonstrations, and similar exercise recommendations.",
     image: DebugFitness,
     tags: ["React JS", "API", "Material UI"],
     source: "https://github.com/Khadalicioso/debug_fitness.git",
