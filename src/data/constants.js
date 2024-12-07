@@ -10,6 +10,7 @@ import CarShowcase from "../images/CarShowcase.jpg";
 import Opulence from "../images/Opulence.jpg";
 import SchoolLogo from "../images/SchoolLogo.png";
 import DebugFitness from "../images/DebugFitness.jpg";
+import GreenTea from "../images/GreenTea.jpg";
 
 export const Bio = {
   name: "Miguel Enrique Dasalla",
@@ -138,6 +139,17 @@ export const experiences = [
 ];
 
 export const projects = [
+  {
+    id: 11,
+    title: "Green Tea",
+    date: "December 2024",
+    description: "",
+    image: GreenTea,
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    source: "",
+    demo: "",
+    status: "inprogress",
+  },
   {
     id: 10,
     title: "Debug Fitness",
