@@ -143,12 +143,13 @@ export const projects = [
     id: 11,
     title: "Green Tea",
     date: "December 2024",
-    description: "",
+    description:
+      "A modern e-commerce platform specialized in premium green tea products, featuring both customer-facing interfaces and a comprehensive admin panel.",
     image: GreenTea,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    source: "",
+    source: "https://github.com/Khadalicioso/green_tea.git",
     demo: "",
-    status: "inprogress",
+    status: "completed",
   },
   {
     id: 10,
