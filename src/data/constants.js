@@ -11,6 +11,7 @@ import Opulence from "../images/Opulence.jpg";
 import SchoolLogo from "../images/SchoolLogo.png";
 import DebugFitness from "../images/DebugFitness.jpg";
 import GreenTea from "../images/GreenTea.jpg";
+import unilink from "../images/unilink.jpg";
 
 export const Bio = {
   name: "Miguel Enrique Dasalla",
@@ -140,7 +141,7 @@ export const experiences = [
 
 export const projects = [
   {
-    id: 11,
+    id: 12,
     title: "Green Tea",
     date: "December 2024",
     description:
@@ -152,7 +153,7 @@ export const projects = [
     status: "completed",
   },
   {
-    id: 10,
+    id: 11,
     title: "Debug Fitness",
     date: "December 2024",
     description:
@@ -164,7 +165,7 @@ export const projects = [
     status: "completed",
   },
   {
-    id: 9,
+    id: 10,
     title: "Netflix Clone",
     date: "November 2024 - December 2024",
     description:
@@ -176,7 +177,7 @@ export const projects = [
     status: "completed",
   },
   {
-    id: 8,
+    id: 9,
     title: "CarHub",
     date: "November 2024 - December 2024",
     description:
@@ -188,7 +189,7 @@ export const projects = [
     status: "completed",
   },
   {
-    id: 7,
+    id: 8,
     title: "Opulence",
     date: "November 2024",
     description:
@@ -200,7 +201,7 @@ export const projects = [
     status: "completed",
   },
   {
-    id: 6,
+    id: 7,
     title: "Yumtopia😋",
     date: "October 2024",
     description:
@@ -212,16 +213,28 @@ export const projects = [
     status: "completed",
   },
   {
+    id: 6,
+    title: "UNILINK - Student Information System",
+    date: "September 2024 - December 2024",
+    description:
+      "A modern and efficient subsystem of a larger academic platform, designed to streamline student information management and administrative processes.",
+    image: unilink,
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
+    source:
+      "https://github.com/Khadalicioso/unilink_student_information_system.git",
+    demo: "",
+    status: "completed",
+  },
+  {
     id: 5,
     title: "Kopibara",
-    date: "September 2024 - Present",
-    description:
-      "A Coffee Ordering Web Application built with ASP.NET MVC, leveraging Microsoft SQL Server as the database, an API for Google Authentication, Entity Framework for data access, and Paymongo for secure payment processing.",
+    date: "September 2024 - December 2024",
+    description: "",
     image: KopibaraCoffeeShop,
-    tags: ["ASP.NET", "MVC", "SQL Server"],
+    tags: ["ASP.NET CORE", "MVC", "SQL Server", "API", "Paymongo"],
     source: "",
     demo: "",
-    status: "inprogress",
+    status: "completed",
   },
   {
     id: 4,
