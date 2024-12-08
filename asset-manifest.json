@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/miguelenriquedasalla/static/css/main.3f8aac83.css",
-    "main.js": "/miguelenriquedasalla/static/js/main.963caef9.js",
+    "main.js": "/miguelenriquedasalla/static/js/main.68797da3.js",
     "static/media/SchoolLogo.png": "/miguelenriquedasalla/static/media/SchoolLogo.8aefa9a3322ba3541b55.png",
     "static/media/KopibaraCoffeeShop.jpg": "/miguelenriquedasalla/static/media/KopibaraCoffeeShop.e777dd3cbc9863a55028.jpg",
     "static/media/BlogWebApp.jpg": "/miguelenriquedasalla/static/media/BlogWebApp.da466cbf6e1ba3abeaaf.jpg",
@@ -11,6 +11,7 @@
     "static/media/CarShowcase.jpg": "/miguelenriquedasalla/static/media/CarShowcase.ce8bea8f9004087fb7e0.jpg",
     "static/media/RestaurantWebApp.jpg": "/miguelenriquedasalla/static/media/RestaurantWebApp.0fcbf688de2225775efa.jpg",
     "static/media/HotelBookingWebApp.jpg": "/miguelenriquedasalla/static/media/HotelBookingWebApp.d17e9a570222d01be059.jpg",
+    "static/media/unilink.jpg": "/miguelenriquedasalla/static/media/unilink.d2e262778858339d783d.jpg",
     "static/media/GreenTea.jpg": "/miguelenriquedasalla/static/media/GreenTea.816996716ea5a5ea4e63.jpg",
     "static/media/Opulence.jpg": "/miguelenriquedasalla/static/media/Opulence.0d1ff33ea3fb71b5081a.jpg",
     "static/media/LandingPages.jpg": "/miguelenriquedasalla/static/media/LandingPages.8184b0723ec5bc9bb7a6.jpg",
@@ -24,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.3f8aac83.css",
-    "static/js/main.963caef9.js"
+    "static/js/main.68797da3.js"
   ]
 }
