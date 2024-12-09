@@ -1,23 +1,53 @@
-import JavascriptMastery from "../images/JavascriptMastery.jpg";
-import BlogWebApp from "../images/BlogWebApp.jpg";
-import BookstoreWebApp from "../images/BookstoreWebApp.jpg";
-import HotelBookingWebApp from "../images/HotelBookingWebApp.jpg";
-import RestaurantWebApp from "../images/RestaurantWebApp.jpg";
-import NetflixClone from "../images/NetflixClone.jpg";
-import KopibaraCoffeeShop from "../images/KopibaraCoffeeShop.jpg";
-import LandingPages from "../images/LandingPages.jpg";
-import CarShowcase from "../images/CarShowcase.jpg";
-import Opulence from "../images/Opulence.jpg";
-import SchoolLogo from "../images/SchoolLogo.png";
-import DebugFitness from "../images/DebugFitness.jpg";
-import GreenTea from "../images/GreenTea.jpg";
-import unilink from "../images/unilink.jpg";
+// IMPORTED LOGO FROM IMAGES
+
+import qcu from "../images/logo/qcu.png";
+import landing_pages from "../images/logo/landing_pages.jpg";
+import javascript_mastery from "../images/logo/javascript_mastery.jpg";
+import the_curious_mind from "../images/logo/the_curious_mind.jpg";
+import read_right from "../images/logo/read_right.jpg";
+import kpl_hotel_and_resort from "../images/logo/kpl_hotel_and_resort.jpg";
+import kopibara from "../images/logo/kopibara.jpg";
+import unilink from "../images/logo/unilink.jpg";
+import yumtopia from "../images/logo/yumtopia.jpg";
+import opulence from "../images/logo/opulence.jpg";
+import carhub from "../images/logo/carhub.jpg";
+import netflix_clone from "../images/logo/netflix_clone.jpg";
+import debug_fitness from "../images/logo/debug_fitness.jpg";
+import green_tea from "../images/logo/green_tea.jpg";
+
+// IMPORTED ICONS FROM IMAGES
+
+import html from "../images/icons/html.png";
+import css from "../images/icons/css.png";
+import js from "../images/icons/js.png";
+import bootstrap from "../images/icons/bootstrap.png";
+import tailwind from "../images/icons/tailwind.png";
+import react from "../images/icons/react.png";
+import reactquery from "../images/icons/reactquery.png";
+import vue from "../images/icons/vue.png";
+import ts from "../images/icons/ts.png";
+import jquery from "../images/icons/jquery.png";
+import next from "../images/icons/next.png";
+import node from "../images/icons/node.png";
+import csharp from "../images/icons/csharp.png";
+import php from "../images/icons/php.png";
+import laravel from "../images/icons/laravel.png";
+import mysql from "../images/icons/mysql.png";
+import sqlserver from "../images/icons/sqlserver.png";
+import mongodb from "../images/icons/mongodb.png";
+import firebase from "../images/icons/firebase.png";
+import dotnet from "../images/icons/dotnet.png";
+import mui from "../images/icons/mui.png";
+import git from "../images/icons/git.png";
+import framer from "../images/icons/framer.png";
+
+// ABOUT ME
 
 export const Bio = {
   name: "Miguel Enrique Dasalla",
   roles: ["Frontend Developer", "Aspiring Backend Developer"],
   description:
-    "I'm a skilled frontend developer with a passion for crafting intuitive and visually appealing user interfaces. I'm also eager to expand my skill set into backend development, building the robust foundations that power exceptional web applications.",
+    "A passionate and detail-oriented web developer committed to crafting captivating digital experiences. I thrive on staying up-to-date with the latest technologies and frameworks to deliver innovative and user-centric solutions.",
   github: "https://github.com/Khadalicioso",
   instagram: "https://www.instagram.com/khadalicioso",
   facebook: "https://www.facebook.com/khadalicioso",
@@ -25,113 +55,114 @@ export const Bio = {
   resume: "/",
 };
 
+// SKILLS AND TECHNOLOGIES
+
 export const skills = [
   {
     skills: [
       {
         name: "HTML 5",
-        image:
-          "https://camo.githubusercontent.com/49179b69f7956cc4b5e5e7987d011103b7e3ffc20c55ca4a43c8ff214c3b6796/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d68746d6c",
+        image: html,
       },
       {
         name: "CSS 3",
-        image:
-          "https://camo.githubusercontent.com/a266b2536a9f4e1b8dc325ca89d9ce8e7f323c1e140f8b830a42f474a56e3b4c/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d637373",
+        image: css,
       },
       {
         name: "Javascript",
-        image:
-          "https://camo.githubusercontent.com/16edff857d92b7794d5f4241aa88b9db4463d06eb52b38624a5fe1cad1584e53/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6a73",
+        image: js,
       },
       {
         name: "Bootstrap",
-        image:
-          "https://camo.githubusercontent.com/6b1bf7b8b619209db3380bb7d254b3aa8eacd86d708ee47c4efd90c3e770c190/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d626f6f747374726170",
+        image: bootstrap,
       },
       {
         name: "Tailwind CSS",
-        image:
-          "https://camo.githubusercontent.com/f383e4b2c5e8c2ca73221c29ef270d55d82eb3beeb79bd6b409dcb6ab64a4b7c/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d7461696c77696e64",
+        image: tailwind,
       },
       {
         name: "React JS",
-        image:
-          "https://camo.githubusercontent.com/cb1fa2738a401d7952e8c150707084c5336ba9d544a238fad8c8d4d942353d8a/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d7265616374",
+        image: react,
+      },
+      {
+        name: "React Query",
+        image: reactquery,
       },
       {
         name: "Vue JS",
-        image:
-          "https://camo.githubusercontent.com/24c2ad5638255b73cd86d97a3857d17f5e500bc2ead06dc4e2213d366e6e5e06/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d767565",
+        image: vue,
       },
       {
         name: "Typescript",
-        image:
-          "https://camo.githubusercontent.com/ea3a367c6ef785b5447cba5462d868ffed003c813a1c2e0d5aed924fc0a7fcda/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d7473",
+        image: ts,
       },
       {
         name: "JQuery",
-        image:
-          "https://camo.githubusercontent.com/24a970aef23ee8a44369f2cc0820d2b0f7b541b397769db31d6fc191b0b3bc41/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a71756572792f6a71756572792d6f726967696e616c2e737667",
+        image: jquery,
       },
       {
         name: "Next JS",
-        image:
-          "https://camo.githubusercontent.com/369ce0f9d1b9e5e69b4b6df1752862ce1fc99699d6bb17d84cc2825c75d1e2d6/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6e6578746a73",
+        image: next,
       },
       {
         name: "Node JS",
-        image:
-          "https://camo.githubusercontent.com/c0ed7f7d36d6437790846bc99e238abd7cb2205dbec27c6e6be959abb04e2733/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6e6f64656a73",
+        image: node,
       },
       {
         name: "C#",
-        image:
-          "https://camo.githubusercontent.com/ffa7b120ef5eca755e9a119e96882fe9743634dec1970a0c8076907390c9c989/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6373",
+        image: csharp,
       },
       {
         name: "PHP",
-        image:
-          "https://camo.githubusercontent.com/92a977256f3f2b4ef99e6684c1d88f1ac0394ed909893e5e56cb3539a31f2590/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f7068702f7068702d6f726967696e616c2e737667",
+        image: php,
       },
       {
-        name: ".NET",
-        image:
-          "https://camo.githubusercontent.com/8ae3d3c84bcef6cce183bf094f57e2998fa844dae3d28cd09c333b5ef84442c9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f646f742d6e65742f646f742d6e65742d6f726967696e616c2e737667",
-      },
-      {
-        name: ".NET Core",
-        image:
-          "https://camo.githubusercontent.com/d1c060eef161748ffe94ee1004fb9987437bc68fa40563857493d2a725238c68/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f646f746e6574636f72652f646f746e6574636f72652d6f726967696e616c2e737667",
+        name: "Laravel",
+        image: laravel,
       },
       {
         name: "MySQL",
-        image:
-          "https://camo.githubusercontent.com/8b690f4dff81513c7425f3b8f6e66b34a1dea43e22562037eeb5449d18571c89/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d7973716c2f6d7973716c2d6f726967696e616c2e737667",
-      },
-      {
-        name: "Firebase",
-        image:
-          "https://camo.githubusercontent.com/8058e635f9243b2d287b6e48dd9964f58fccf86c001075ba6d6fd15ae0ebe2ad/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f66697265626173652f66697265626173652d706c61696e2e737667",
+        image: mysql,
       },
       {
         name: "SQL Server",
-        image:
-          "https://camo.githubusercontent.com/078b045ff25dd1715452d5ddd4600f6c83b799093e3d52a17f420444006ba739/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d6963726f736f667473716c7365727665722f6d6963726f736f667473716c7365727665722d706c61696e2e737667",
+        image: sqlserver,
+      },
+      {
+        name: "MongoDB",
+        image: mongodb,
+      },
+      {
+        name: "Firebase",
+        image: firebase,
+      },
+      {
+        name: ".NET Core",
+        image: dotnet,
+      },
+      {
+        name: "Material UI",
+        image: mui,
       },
       {
         name: "Git",
-        image:
-          "https://camo.githubusercontent.com/15166a15835f145259844be455ab5945594a70c48a3090aa83d193bd5e3e9bc5/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6769742f6769742d6f726967696e616c2e737667",
+        image: git,
+      },
+      {
+        name: "Framer Motion",
+        image: framer,
       },
     ],
   },
 ];
 
+// EXPERIENCES
+
 export const experiences = [
   {
     id: 0,
     role: "Full Stack Developer",
-    img: SchoolLogo,
+    img: qcu,
     company: "Quezon City University",
     date: "2024 - Present",
     desc: [
@@ -153,6 +184,8 @@ export const experiences = [
   },
 ];
 
+// PROJECTS
+
 export const projects = [
   {
     id: 12,
@@ -160,7 +193,7 @@ export const projects = [
     date: "December 2024",
     description:
       "A modern e-commerce platform specialized in premium green tea products, featuring both customer-facing interfaces and a comprehensive admin panel.",
-    image: GreenTea,
+    image: green_tea,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/green_tea.git",
     demo: "",
@@ -172,7 +205,7 @@ export const projects = [
     date: "December 2024",
     description:
       "A modern fitness application built with React and Material-UI that helps users discover, learn, and track various exercises. The app provides detailed exercise information, video demonstrations, and similar exercise recommendations.",
-    image: DebugFitness,
+    image: debug_fitness,
     tags: ["React JS", "API", "Material UI"],
     source: "https://github.com/Khadalicioso/debug_fitness.git",
     demo: "",
@@ -184,7 +217,7 @@ export const projects = [
     date: "November 2024 - December 2024",
     description:
       "A Netflix clone web application built with modern web technologies. This project replicates the core features and UI of Netflix, providing a similar streaming platform experience.",
-    image: NetflixClone,
+    image: netflix_clone,
     tags: ["React JS", "Firebase"],
     source: "https://github.com/Khadalicioso/netflix_clone.git",
     demo: "https://khadalicioso.github.io/netflix_clone/",
@@ -196,7 +229,7 @@ export const projects = [
     date: "November 2024 - December 2024",
     description:
       "A modern car showcase platform built with Next.js 13, allowing users to explore and discover various car models with a beautiful and responsive interface.",
-    image: CarShowcase,
+    image: carhub,
     tags: ["Next JS", "TypeScript", "Tailwind CSS"],
     source: "https://github.com/Khadalicioso/carhub.git",
     demo: "https://khadalicioso.github.io/carhub/",
@@ -207,8 +240,8 @@ export const projects = [
     title: "Opulence",
     date: "November 2024",
     description:
-      "Opulence is a simple sophisticated real estate web application meticulously crafted using HTML, CSS, JavaScript, PHP, and MySQL. This platform is designed to cater to discerning individuals seeking extraordinary properties.",
-    image: Opulence,
+      "A simple yet powerful real estate system built with PHP where users can list, search, and manage properties. Perfect for small to medium-sized real estate agencies.",
+    image: opulence,
     tags: ["HTML", "CSS", "Javascript", "PDO", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/opulence.git",
     demo: "",
@@ -219,8 +252,8 @@ export const projects = [
     title: "Yumtopia😋",
     date: "October 2024",
     description:
-      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Restaurant WebApp is a powerful tool that streamlines restaurant operations and enhances the customer dining experience, offering features like online ordering, table reservations, loyalty programs, contactless payments, and real-time updates.",
-    image: RestaurantWebApp,
+      "A sophisticated food ordering and restaurant management platform that revolutionizes the dining experience. Built with cutting-edge PHP architecture, it seamlessly integrates customer ordering, kitchen operations, and administrative controls into one powerful ecosystem.",
+    image: yumtopia,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/yumtopia.git",
     demo: "",
@@ -245,7 +278,7 @@ export const projects = [
     date: "September 2024 - December 2024",
     description:
       "KOPIBARA is a modern web-based coffee ordering system built with ASP.NET Core 8.0. It provides a seamless experience for customers to browse and order various coffee beverages, with both hot and iced options available.",
-    image: KopibaraCoffeeShop,
+    image: kopibara,
     tags: [
       "ASP.NET Core",
       "MVC",
@@ -263,8 +296,8 @@ export const projects = [
     title: "K$PAL Hotel and Resort",
     date: "September 2024",
     description:
-      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Hotel Booking WebApp is your passport to unforgettable travel experiences. Effortlessly search, book, and manage your hotel stays, all from the comfort of your device.",
-    image: HotelBookingWebApp,
+      "A modern and efficient hotel booking system that provides seamless room reservations and management capabilities. Experience luxury and convenience at your fingertips!",
+    image: kpl_hotel_and_resort,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/kpl_hotel_and_resort.git",
     demo: "",
@@ -275,8 +308,8 @@ export const projects = [
     title: "Read Right",
     date: "August 2024",
     description:
-      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Book Store WebApp is your digital portal to a world of words. Explore a vast collection of books, from classic literature to contemporary bestsellers.",
-    image: BookstoreWebApp,
+      "Read Right! is a clean and efficient bookstore system built with PHP and MySQL. This straightforward application provides essential book shopping features for customers and a simple management interface for administrators.",
+    image: read_right,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/read_right.git",
     demo: "",
@@ -287,8 +320,8 @@ export const projects = [
     title: "The Curious Mind",
     date: "July 2024",
     description:
-      "Built with HTML, CSS, JavaScript, PHP, and MySQL, A simple Blog WebApp is more than just a digital diary. It's a platform for sharing thoughts, ideas, and stories with the world. Explore a diverse range of topics, from technology and culture to personal experiences and creative endeavors.",
-    image: BlogWebApp,
+      "A simple yet powerful blog system built with PHP where users can create, read, and interact with blog posts. Perfect for small to medium-sized blogging communities.",
+    image: the_curious_mind,
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/the_curious_mind.git",
     demo: "",
@@ -300,7 +333,7 @@ export const projects = [
     date: "June 2024 - Present",
     description:
       "A comprehensive collection of JavaScript projects designed to help me master web development through hands-on practice. This repository contains various projects ranging from simple utilities to complex games and applications.",
-    image: JavascriptMastery,
+    image: javascript_mastery,
     tags: ["HTML", "CSS", "JavaScript"],
     source:
       "https://github.com/Khadalicioso/javascript_mastery_projects_collection.git",
@@ -313,7 +346,7 @@ export const projects = [
     date: "June 2024 - Present",
     description:
       "A collection of modern, responsive landing pages and web applications built with various technologies.",
-    image: LandingPages,
+    image: landing_pages,
     tags: [
       "HTML",
       "CSS",

@@ -8,17 +8,18 @@ import "slick-carousel/slick/slick-theme.css";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 const Container = styled.div`
-  margin-top: 100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content-center;
+  justify-content: center;
   position: relative;
   z-index: 1;
-  padding: 0 16px;
   align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
 `;
 
 const Wrapper = styled.div`
+  margin-top: 5%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -26,6 +27,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1100px;
+  padding: 80px 20px;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -33,25 +35,21 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 52px;
+  font-size: 3.5em;
   text-align: center;
   font-weight: 900;
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
 `;
 
 const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+  width: 100%;
+  letter-spacing: 1pt;
+  margin-bottom: 50px;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
 `;
 
 const StatusLegend = styled.div`
@@ -100,7 +98,7 @@ const CarouselContainer = styled.div`
     transform: scale(0.85);
     filter: blur(2px);
     pointer-events: none;
-    
+
     &.slick-active {
       opacity: 0.5;
       transform: scale(0.85);
@@ -114,7 +112,7 @@ const CarouselContainer = styled.div`
         pointer-events: auto;
       }
     }
-    
+
     &.slick-current {
       opacity: 1;
       transform: scale(1);
@@ -196,7 +194,7 @@ const Projects = ({ openModal, setOpenModal }) => {
           centerPadding: "0",
           speed: 200,
           cssEase: "linear",
-          infinite: true
+          infinite: true,
         },
       },
       {
@@ -208,7 +206,7 @@ const Projects = ({ openModal, setOpenModal }) => {
           centerPadding: "20px",
           speed: 200,
           cssEase: "linear",
-          infinite: true
+          infinite: true,
         },
       },
     ],
@@ -216,7 +214,7 @@ const Projects = ({ openModal, setOpenModal }) => {
 
   const handleProjectClick = (url) => {
     if (url) {
-      window.open(url, '_blank', 'noopener,noreferrer');
+      window.open(url, "_blank", "noopener,noreferrer");
     }
   };
 
@@ -225,7 +223,10 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <Title>Projects.</Title>
         <Desc>
-          My portfolio highlights my skills and experience through concrete examples of my work. Each project, linked to its code repository and live demo, showcases my ability to tackle complex challenges, leverage diverse technologies, and manage projects efficiently.
+          My portfolio highlights my skills and experience through concrete
+          examples of my work. Each project, linked to its code repository and
+          live demo, showcases my ability to tackle complex challenges, leverage
+          diverse technologies, and manage projects efficiently.
         </Desc>
         <StatusLegend>
           <StatusItem>

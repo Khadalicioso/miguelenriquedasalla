@@ -3,6 +3,7 @@ import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
 import { HashRouter } from "react-router-dom";
 import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
 import Skills from "./components/sections/Skills";
 import StarCanvas from "./components/canvas/Stars";
 import { AnimatePresence } from "framer-motion";
@@ -46,6 +47,7 @@ function App() {
           <AnimatePresence>
             <div>
               <Hero />
+              <About />
               <Wrapper>
                 <Skills />
                 <Experience />

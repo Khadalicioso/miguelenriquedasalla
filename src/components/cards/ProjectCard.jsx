@@ -22,18 +22,19 @@ const Card = styled.div`
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
-  border: 2px solid ${({ theme, status }) => {
-    switch (status) {
-      case 'completed':
-        return theme.border_completed;
-      case 'inprogress':
-        return theme.border_inprogress;
-      case 'onhold':
-        return theme.border_onhold;
-      default:
-        return 'transparent';
-    }
-  }};
+  border: 2px solid
+    ${({ theme, status }) => {
+      switch (status) {
+        case "completed":
+          return theme.border_completed;
+        case "inprogress":
+          return theme.border_inprogress;
+        case "onhold":
+          return theme.border_onhold;
+        default:
+          return "transparent";
+      }
+    }};
   overflow: hidden;
   padding: 26px 20px;
   display: flex;
@@ -49,6 +50,7 @@ const Card = styled.div`
 
 const Image = styled.img`
   width: 100%;
+  max-height: 250px;
   height: auto;
   background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
@@ -110,15 +112,19 @@ const Description = styled.div`
   overflow: hidden;
   margin-top: 8px;
   display: -webkit-box;
-  max-width: 100%;
+  width: 100%;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  text-align: justify;
 `;
 
 const ProjectCards = ({ project, setOpenModal }) => {
   return (
-    <Card status={project.status} onClick={() => setOpenModal({ state: true, project: project })}>
+    <Card
+      status={project.status}
+      onClick={() => setOpenModal({ state: true, project: project })}
+    >
       <Image src={project.image} />
       <Tags>
         {project.tags?.map((tag) => (

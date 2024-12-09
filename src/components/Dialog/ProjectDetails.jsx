@@ -55,6 +55,7 @@ const Date = styled.div`
 const Desc = styled.div`
   font-size: 16px;
   font-weight: 400;
+  text-align: justify;
   color: ${({ theme }) => theme.text_primary};
   margin: 8px 6px;
   @media only screen and (max-width: 600px) {
@@ -187,9 +188,9 @@ const index = ({ openModal, setOpenModal }) => {
           </Tags>
           <Desc>{project?.description}</Desc>
           <ButtonGroup>
-            <Button 
-              dull 
-              href={project?.source || "#"} 
+            <Button
+              dull
+              href={project?.source || "#"}
               target="new"
               disabled={!project?.source}
               onClick={(e) => !project?.source && e.preventDefault()}

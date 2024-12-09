@@ -7,16 +7,18 @@ import ExperienceCard from "../cards/ExperienceCard";
 import EarthCanvas from "../canvas/Earth";
 
 const Container = styled.div`
-margin-top: 10%;
-display: flex;
-flex-direction: column;
-justify-content-center;
-position: relative;
-z-index: 1;
-align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
 `;
 
 const Wrapper = styled.div`
+  margin-top: 5%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -24,6 +26,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1100px;
+  padding: 80px 0;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -31,47 +34,40 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 52px;
+  font-size: 3.5em;
   text-align: center;
   font-weight: 900;
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
 `;
 
 const Desc = styled.div`
-  font-size: 18px;
+  font-size: 1rem;
   text-align: center;
-  font-weight: 900;
+  font-weight: 500;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
 `;
 
 const EarthCanvasContainer = styled.div`
   width: 100%;
   height: 300px;
-  
+
   @media (max-width: 1200px) {
     height: 280px;
   }
-  
+
   @media (max-width: 960px) {
     height: 260px;
   }
-  
+
   @media (max-width: 768px) {
     height: 240px;
   }
-  
+
   @media (max-width: 480px) {
     height: 220px;
   }
-  
+
   @media (max-width: 320px) {
     height: 200px;
   }

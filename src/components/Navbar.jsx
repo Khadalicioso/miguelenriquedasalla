@@ -145,7 +145,7 @@ export const NavLink = styled.a`
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 2px;
@@ -158,7 +158,7 @@ export const NavLink = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.primary};
-    
+
     &::after {
       width: 100%;
     }
@@ -166,7 +166,7 @@ export const NavLink = styled.a`
 
   &.active {
     color: ${({ theme }) => theme.primary};
-    
+
     &::after {
       width: 100%;
     }
@@ -180,7 +180,7 @@ const MobileIcon = styled.div`
   color: ${({ theme }) => theme.text_primary};
   display: none;
   cursor: pointer;
-  
+
   .menu-icon {
     width: 24px;
     height: 24px;
@@ -272,14 +272,17 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">
+        <NavLogo>
           <ColorText>&lt;</ColorText>
           <NameText>Miguel Enrique</NameText>
           <SlashText>/</SlashText>
           <ColorText>&gt;</ColorText>
         </NavLogo>
 
-        <MobileIcon className={isOpen ? 'open' : ''} onClick={() => setIsOpen(!isOpen)}>
+        <MobileIcon
+          className={isOpen ? "open" : ""}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <div className="menu-icon">
             <span></span>
             <span></span>
@@ -288,17 +291,25 @@ const Navbar = () => {
         </MobileIcon>
 
         <NavItems>
+          <NavLink href="#Home">Home</NavLink>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
+          <NavLink href="#Experience">Experience</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
         </NavItems>
 
-        <MobileMenu className={isOpen ? 'open' : ''}>
+        <MobileMenu className={isOpen ? "open" : ""}>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Home">
+            Home
+          </NavLink>
           <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
             About
           </NavLink>
           <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
             Skills
+          </NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">
+            Experience
           </NavLink>
           <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">
             Projects

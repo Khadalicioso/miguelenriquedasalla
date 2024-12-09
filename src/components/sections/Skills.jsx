@@ -1,19 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 import { skills } from "../../data/constants";
 
 const Container = styled.div`
-  margin-top: 10%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content-center;
+  justify-content: center;
   position: relative;
   z-index: 1;
   align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
 `;
 
 const Wrapper = styled.div`
+  margin-top: 5%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -21,7 +23,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 10px 0px 100px 0;
+  padding: 80px 20px;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -29,24 +31,17 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 50px;
+  font-size: 3.5em;
   text-align: center;
   font-weight: 900;
   color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
 `;
 
 const Desc = styled.div`
-  font-size: 18px;
+  font-size: 1rem;
   text-align: center;
-  max-width: 900px;
+  font-weight: 500;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
 `;
 
 const SkillsContainer = styled.div`
@@ -114,14 +109,10 @@ const SkillItem = styled(motion.div)`
   }
 
   span {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: bold;
     color: ${({ theme }) => theme.text_primary};
     text-align: center;
-    
-    @media (max-width: 768px) {
-      font-size: 12px;
-    }
   }
 `;
 
@@ -141,10 +132,7 @@ const Skills = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
             >
-              <img 
-                src={tech.image} 
-                alt={tech.name}
-              />
+              <img src={tech.image} alt={tech.name} />
               <span>{tech.name}</span>
             </SkillItem>
           ))}

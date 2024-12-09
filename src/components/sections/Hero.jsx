@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import profile from "../../images/profile.jpg";
+import miguel_enrique_dasalla from "../../images/miguel_enrique_dasalla.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { motion } from "framer-motion";
 import {
@@ -116,7 +116,7 @@ const Title = styled.div`
   span {
     display: inline-block;
     transition: transform 0.3s ease-in-out;
-    
+
     &:hover {
       animation: wave 1s ease-in-out;
       background: linear-gradient(
@@ -130,7 +130,8 @@ const Title = styled.div`
     }
   }
   @keyframes wave {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(0);
     }
     25% {
@@ -194,21 +195,25 @@ const Span = styled.div`
 `;
 
 const SubTitle = styled.div`
-  font-size: 22px;
-  line-height: 36px;
-  margin-bottom: 50px;
+  font-size: 1.2rem;
+  letter-spacing: 2pt;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  width: 100%;
   color: ${({ theme }) => theme.text_primary + 95};
   @media (max-width: 960px) {
-    text-align: center;
+    text-align: justify;
   }
   @media (max-width: 639px) {
-    font-size: 14px;
-    line-height: 34px;
+    font-size: 1rem;
+    text-align: justify;
+    letter-spacing: 1pt;
   }
   @media (max-width: 349px) {
-    text-align: center;
-    font-size: 12px;
-    line-height: 32px;
+    text-align: justify;
+    font-size: 0.8rem;
+    letter-spacing: 0.5pt;
   }
 `;
 
@@ -217,10 +222,10 @@ const ResumeButton = styled.a`
   -moz-appearance: button;
   appearance: button;
   text-decoration: none;
-  width: 95%;
-  max-width: 320px;
+  width: 100%;
+  max-width: 200px;
   text-align: center;
-  padding: 18px 0;
+  padding: 15px 0;
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(
     225deg,
@@ -228,12 +233,12 @@ const ResumeButton = styled.a`
     hsla(294, 100%, 50%, 1) 100%
   );
   box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
-  border-radius: 50px;
-  font-weight: 600;
+  border-radius: 1rem;
+  font-weight: 900;
   font-size: 22px;
   &:hover {
     transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
     box-shadow: 20px 20px 60px #1f2634;
     filter: brightness(1);
   }
@@ -342,8 +347,7 @@ const SocialMediaIcons = styled.div`
   display: flex;
   justify-content: start;
   gap: 16px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
   @media (max-width: 639px) {
     gap: 12px;
   }
@@ -351,18 +355,11 @@ const SocialMediaIcons = styled.div`
 
 const SocialMediaIcon = styled.a`
   display: inline-block;
-  font-size: 36px;
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
     transform: scale(1.2);
-  }
-  @media (max-width: 639px) {
-    font-size: 32px;
-  }
-  @media (max-width: 349px) {
-    font-size: 28px;
   }
 `;
 
@@ -453,13 +450,14 @@ const RotatingIconsBackground = styled.div`
     }
   }
 
-  ${[...Array(8)].map((_, i) => {
-    const angle = (i * 45) * (Math.PI / 180);
-    const radius = 280;
-    const x = Math.cos(angle) * radius;
-    const y = Math.sin(angle) * radius;
-    
-    return `
+  ${[...Array(8)]
+    .map((_, i) => {
+      const angle = i * 45 * (Math.PI / 180);
+      const radius = 280;
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+
+      return `
       img:nth-child(${i + 1}) {
         left: calc(50% + ${x}px);
         top: calc(50% + ${y}px);
@@ -487,11 +485,12 @@ const RotatingIconsBackground = styled.div`
         }
       }
     `;
-  }).join('')}
+    })
+    .join("")}
 `;
 
 const Hero = () => {
-  const helloText = "Hi, I'm";
+  const helloText = "Hello, I'm";
   const nameText = `${Bio.name}`;
 
   const splitText = (text) => {
@@ -503,7 +502,7 @@ const Hero = () => {
   };
 
   return (
-    <div id="About">
+    <div id="Home">
       <HeroContainer>
         <HeroBg>
           <StarCanvas />
@@ -536,16 +535,16 @@ const Hero = () => {
 
               <SocialMediaIcons>
                 <SocialMediaIcon href={Bio.github} target="display">
-                  <GithubIcon style={{ fontSize: 48 }} />
+                  <GithubIcon style={{ fontSize: 36 }} />
                 </SocialMediaIcon>
                 <SocialMediaIcon href={Bio.facebook} target="display">
-                  <FacebookIcon style={{ fontSize: 48 }} />
+                  <FacebookIcon style={{ fontSize: 36 }} />
                 </SocialMediaIcon>
                 <SocialMediaIcon href={Bio.instagram} target="display">
-                  <InstagramIcon style={{ fontSize: 48 }} />
+                  <InstagramIcon style={{ fontSize: 36 }} />
                 </SocialMediaIcon>
                 <SocialMediaIcon href={Bio.linkedin} target="display">
-                  <LinkedInIcon style={{ fontSize: 48 }} />
+                  <LinkedInIcon style={{ fontSize: 36 }} />
                 </SocialMediaIcon>
               </SocialMediaIcons>
               <ResumeButton href={Bio.resume} target="_blank">
@@ -558,17 +557,40 @@ const Hero = () => {
                   <RotatingIconsBackground>
                     <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
                     <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
-                    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
-                    <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" />
-                    <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" />
-                    <img src="https://skillicons.dev/icons?i=react" alt="React" />
-                    <img src="https://skillicons.dev/icons?i=vue" alt="Vue.js" />
-                    <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" />
+                    <img
+                      src="https://skillicons.dev/icons?i=js"
+                      alt="JavaScript"
+                    />
+                    <img
+                      src="https://skillicons.dev/icons?i=bootstrap"
+                      alt="Bootstrap"
+                    />
+                    <img
+                      src="https://skillicons.dev/icons?i=tailwind"
+                      alt="Tailwind CSS"
+                    />
+                    <img
+                      src="https://skillicons.dev/icons?i=react"
+                      alt="React"
+                    />
+                    <img
+                      src="https://skillicons.dev/icons?i=vue"
+                      alt="Vue.js"
+                    />
+                    <img
+                      src="https://skillicons.dev/icons?i=ts"
+                      alt="TypeScript"
+                    />
                   </RotatingIconsBackground>
                   <Img
-                    style={{ width: "400px", height: "400px", position: "relative", zIndex: 2 }}
-                    src={profile}
-                    alt="Miguel Enrique"
+                    style={{
+                      width: "400px",
+                      height: "400px",
+                      position: "relative",
+                      zIndex: 2,
+                    }}
+                    src={miguel_enrique_dasalla}
+                    alt="Miguel Enrique Dasalla"
                   />
                 </ImageWrapper>
               </motion.div>

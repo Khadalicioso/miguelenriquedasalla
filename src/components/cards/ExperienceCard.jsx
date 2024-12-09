@@ -26,18 +26,18 @@ const Body = styled.div`
 `;
 
 const Role = styled.div`
-  font-size: 18px;
-  font-weight: 600px;
+  font-size: 1.2rem;
+  font-weight: 900;
   color: ${({ theme }) => theme.text_primary + 99};
 
   @media only screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 15px;
   }
 `;
 
 const Company = styled.div`
-  font-size: 14px;
-  font-weight: 500px;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.text_secondary + 99};
 
   @media only screen and (max-width: 768px) {
@@ -46,8 +46,8 @@ const Company = styled.div`
 `;
 
 const Date = styled.div`
-  font-size: 12px;
-  font-weight: 400px;
+  font-size: 0.8rem;
+  font-weight: 500px;
   color: ${({ theme }) => theme.text_secondary + 80};
 
   @media only screen and (max-width: 768px) {
@@ -57,8 +57,9 @@ const Date = styled.div`
 
 const Description = styled.div`
   width: 100%;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 1pt;
+  font-weight: 500;
   color: ${({ theme }) => theme.text_primary + 99};
   margin-bottom: 10px;
 
@@ -79,10 +80,6 @@ const Description = styled.div`
       left: 0;
     }
   }
-
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
 `;
 
 const Skills = styled.div`
@@ -93,12 +90,9 @@ const Skills = styled.div`
 `;
 
 const Skill = styled.div`
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 99};
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
 `;
 
 const ItemWrapper = styled.div`
@@ -147,12 +141,11 @@ const ExperienceCard = ({ experience }) => {
       <Description>
         {experience?.desc && (
           <ul>
-            {Array.isArray(experience.desc)
-              ? experience.desc.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))
-              : <li>{experience.desc}</li>
-            }
+            {Array.isArray(experience.desc) ? (
+              experience.desc.map((item, index) => <li key={index}>{item}</li>)
+            ) : (
+              <li>{experience.desc}</li>
+            )}
           </ul>
         )}
         {experience?.skills && (
