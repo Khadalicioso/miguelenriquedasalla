@@ -135,8 +135,8 @@ export const experiences = [
     company: "Quezon City University",
     date: "2024 - Present",
     desc: [
-      "Developed KOPIBARA, an online coffee ordering system, using ASP.NET Core MVC, Entity Framework Core, SQL Server, and Bootstrap for a responsive UI.",
-      "Developed UNILINK, a subsystem Student Information Management System, using PHP, MySQL, jQuery AJAX for dynamic data handling, and Bootstrap for a modern and user-friendly interface.",
+      "Developed a system called KOPIBARA, an online coffee ordering system, using ASP.NET Core MVC for a scalable backend, Entity Framework Core for efficient data access, SQL Server for reliable database storage, and Bootstrap for a responsive user interface.",
+      "Developed the Student Information System as a key component of UNILINK: Academic Community Web Application. This subsystem leverages PHP, MySQL, jQuery AJAX, and Bootstrap to efficiently manage student records, attendance, grades, and other academic data.",
     ],
     skills: [
       "HTML",
@@ -144,6 +144,7 @@ export const experiences = [
       "JavaScript",
       "Bootstrap",
       "ASP.NET",
+      "MVC",
       "PHP",
       "MySQL",
       "Entity Framework",
