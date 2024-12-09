@@ -242,7 +242,8 @@ export const projects = [
     id: 5,
     title: "Kopibara",
     date: "September 2024 - December 2024",
-    description: "",
+    description:
+      "KOPIBARA is a modern web-based coffee ordering system built with ASP.NET Core 8.0. It provides a seamless experience for customers to browse and order various coffee beverages, with both hot and iced options available.",
     image: KopibaraCoffeeShop,
     tags: [
       "ASP.NET Core",
