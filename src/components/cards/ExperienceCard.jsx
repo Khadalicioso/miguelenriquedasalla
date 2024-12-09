@@ -61,14 +61,28 @@ const Description = styled.div`
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 99};
   margin-bottom: 10px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
-`;
-
-const Span = styled.div`
-  display: -webkit-box;
-  max-width: 100%;
 `;
 
 const Skills = styled.div`
@@ -131,7 +145,16 @@ const ExperienceCard = ({ experience }) => {
         </Body>
       </Top>
       <Description>
-        {experience?.desc && <Span>{experience?.desc}</Span>}
+        {experience?.desc && (
+          <ul>
+            {Array.isArray(experience.desc)
+              ? experience.desc.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))
+              : <li>{experience.desc}</li>
+            }
+          </ul>
+        )}
         {experience?.skills && (
           <>
             <br />

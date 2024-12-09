@@ -130,12 +130,25 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     img: SchoolLogo,
     company: "Quezon City University",
-    date: "2022 - Present",
-    desc: "As a Front-End Developer, I am responsible for designing, developing, and maintaining the user interface of our web applications. My primary focus is on creating intuitive and visually appealing user experiences that align with our product vision. I collaborate closely with UI/UX designers, backend developers, and product managers to ensure seamless integration and optimal performance.",
-    skills: ["HTML", "CSS", "Bootstrap", "JavaScript", "ASP.NET"],
+    date: "2024 - Present",
+    desc: [
+      "Developed KOPIBARA, an online coffee ordering system, using ASP.NET Core MVC, Entity Framework Core, SQL Server, and Bootstrap for a responsive UI.",
+      "Developed UNILINK, a subsystem Student Information Management System, using PHP, MySQL, jQuery AJAX for dynamic data handling, and Bootstrap for a modern and user-friendly interface.",
+    ],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "ASP.NET",
+      "PHP",
+      "MySQL",
+      "Entity Framework",
+      "SQL Server",
+    ],
   },
 ];
 
