@@ -14,7 +14,7 @@
 
 Welcome to my personal portfolio! I'm Miguel Enrique Dasalla, a passionate frontend developer dedicated to creating intuitive and visually stunning user interfaces. With a strong foundation in frontend technologies and an eagerness to expand into backend development, I strive to build comprehensive web applications that deliver exceptional user experiences.
 
-**Live Demo:** [View Portfolio](https://khadalicioso.github.io/miguelenriquedasalla)
+**Portfolio Demo:** [https://khadalicioso.github.io/miguelenriquedasalla/](https://khadalicioso.github.io/miguelenriquedasalla/)
 
 ## Core Features
 
